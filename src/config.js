@@ -2,21 +2,25 @@ const basePath = process.cwd();
 const { MODE } = require(`${basePath}/constants/blend_mode.js`);
 const { NETWORK } = require(`${basePath}/constants/network.js`);
 
-const network = NETWORK.eth;
+const network = NETWORK.sol;
 
 // General metadata for Ethereum
-const namePrefix = "Your Collection";
-const description = "Remember to replace this description";
+const namePrefix = "BaslerTestCollection";
+const description = "Test March 2022 Basel";
 const baseUri = "ipfs://NewUriToReplace";
 
 const solanaMetadata = {
-  symbol: "YC",
-  seller_fee_basis_points: 1000, // Define how much % you want from secondary market sales 1000 = 10%
-  external_url: "https://www.youtube.com/c/hashlipsnft",
+  symbol: "PG",
+  seller_fee_basis_points: 2000, // Define how much % you want from secondary market sales 1000 = 10%
+  external_url: "",
   creators: [
     {
-      address: "7fXNuer5sbZtaTEPhtJ5g5gNtuyRoKkvxdjEjEnPN4mC",
-      share: 100,
+      address: "F2ohwbZugrno84QR54cnTeVbNzktArbJooHiHrcvcLMx",
+      share: 50,
+    },
+    {
+      address: "F2ohwbZugrno84QR54cnTeVbNzktArbJooHiHrcvcLMx",
+      share: 50,
     },
   ],
 };
@@ -24,15 +28,11 @@ const solanaMetadata = {
 // If you have selected Solana then the collection starts from 0 automatically
 const layerConfigurations = [
   {
-    growEditionSizeTo: 5,
+    growEditionSizeTo: 20,
     layersOrder: [
       { name: "Background" },
-      { name: "Eyeball" },
-      { name: "Eye color" },
-      { name: "Iris" },
-      { name: "Shine" },
-      { name: "Bottom lid" },
-      { name: "Top lid" },
+      { name: "Person" },
+      { name: "Blindfold" },
     ],
   },
 ];
@@ -68,7 +68,7 @@ const text = {
 };
 
 const pixelFormat = {
-  ratio: 2 / 128,
+  ratio: 1 / 8,
 };
 
 const background = {
@@ -92,11 +92,11 @@ const preview = {
 };
 
 const preview_gif = {
-  numberOfImages: 5,
-  order: "ASC", // ASC, DESC, MIXED
+  numberOfImages: 20,
+  order: "MIXED", // ASC, DESC, MIXED
   repeat: 0,
   quality: 100,
-  delay: 500,
+  delay: 200,
   imageName: "preview.gif",
 };
 

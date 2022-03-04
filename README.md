@@ -1,3 +1,25 @@
+# Commands ran by cullight
+
+```sh
+yarn install
+```
+
+```sh
+npm run build
+```
+
+```sh
+npm run rarity
+```
+
+```sh
+npm run pixelate
+```
+
+```sh
+npm run preview_gif
+```
+
 # Welcome to HashLips 👄
 
 ![](https://github.com/HashLips/hashlips_art_engine/blob/main/logo.png)
