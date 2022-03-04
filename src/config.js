@@ -15,7 +15,7 @@ const solanaMetadata = {
   external_url: "",
   creators: [
     {
-      address: "F2ohwbZugrno84QR54cnTeVbNzktArbJooHiHrcvcLMx",
+      address: "Cdh84GyYHUGKQhUFz8ABEZwgXYURdgVkuQpR2nLbXPA",
       share: 50,
     },
     {
